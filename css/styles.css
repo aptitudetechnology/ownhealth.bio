@@ -1,0 +1,173 @@
+/* Basic Reset & Body Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    background-color: #e9f5f9; /* Light blue-grey */
+    color: #333;
+}
+
+.container {
+    width: 85%;
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding: 25px 0;
+}
+
+/* Header */
+header {
+    background: #1a73e8; /* Google Blue */
+    color: #fff;
+    padding-top: 25px;
+    min-height: 80px;
+    border-bottom: #0f4c81 4px solid;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 3em;
+    line-height: 1.2em;
+    letter-spacing: -1px;
+}
+
+header .tagline {
+    font-size: 1.2em;
+    opacity: 0.95;
+    margin-top: 8px;
+    font-weight: 300;
+}
+
+/* Main Content Sections */
+section {
+    padding: 60px 0;
+    background: #fff;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    border-radius: 8px;
+}
+
+section:nth-of-type(odd) {
+    background-color: #fcfdff; /* Slightly different background for alternating sections */
+}
+
+section#hero {
+    background: linear-gradient(135deg, #1a73e8 0%, #00c6ff 100%); /* Blue gradient */
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    border-radius: 0; /* Remove border-radius for hero */
+    box-shadow: none;
+}
+
+section#hero h2 {
+    font-size: 3.5em;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+section#hero p {
+    font-size: 1.3em;
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+    opacity: 0.9;
+}
+
+section h3 {
+    color: #1a73e8;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+section p {
+    margin-bottom: 20px;
+    text-align: justify;
+    font-size: 1.1em;
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+section ul li {
+    background: #e0f2f7; /* Light blue for list items */
+    margin: 10px auto;
+    padding: 15px 20px;
+    border-left: 5px solid #1a73e8;
+    border-radius: 5px;
+    max-width: 600px;
+    font-size: 1.1em;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    color: #fff;
+    background: #008cba; /* A teal-blue */
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 50px; /* Pill shape */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 1.1em;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.btn:hover {
+    background: #007bb5;
+    transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #333;
+    color: #fff;
+    margin-top: 30px;
+    border-top: #0f4c81 4px solid;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    header .tagline {
+        font-size: 1em;
+    }
+
+    section#hero h2 {
+        font-size: 2.5em;
+    }
+
+    section h3 {
+        font-size: 2em;
+    }
+
+    .btn {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+}
